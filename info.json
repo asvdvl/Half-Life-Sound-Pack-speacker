@@ -1,12 +1,12 @@
 {
-    "title": "factorio-mod-template",
-    "name": "factorio-mod-template",
+    "title": "Half Life Sound Pack",
+    "name": "Half-Life-Sound-Pack",
     "author": "asvdev(in game - Dial-up)",
     "factorio_version": "1.1",
     "version": "0.0.0",
     "dependencies": ["base >= 1.1.0"],
-    "description": "factorio-mod-template - template for my mods",
-    "homepage": "https://github.com/asvdvl/factorio-mod-template",
+    "description": "porting sounds from the first half life",
+    "homepage": "https://github.com/asvdvl/Half-Life-Sound-Pack",
     "package":{
         "ignore":[
         ]
