@@ -1,7 +1,3 @@
--- https://lua-api.factorio.com/latest/prototypes/ProgrammableSpeakerPrototype.html#instruments
-
--- https://lua-api.factorio.com/latest/types/ProgrammableSpeakerNote.html
-
 local files_table = require("soundpack/files")
 local cat_name_base = "hl-soundpack/"
 
