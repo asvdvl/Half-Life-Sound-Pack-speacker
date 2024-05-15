@@ -1,2 +1,3 @@
 .env
 soundpack
+locale/*/generated*.cfg

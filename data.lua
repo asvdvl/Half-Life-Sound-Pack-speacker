@@ -3,7 +3,7 @@
 -- https://lua-api.factorio.com/latest/types/ProgrammableSpeakerNote.html
 
 local files_table = require("soundpack/files")
-local cat_name_base = "hl-soundpack-"
+local cat_name_base = "hl-soundpack/"
 
 local instruments = data.raw["programmable-speaker"]["programmable-speaker"].instruments
 for cat_name, cat_sounds in pairs(files_table) do
@@ -12,8 +12,8 @@ for cat_name, cat_sounds in pairs(files_table) do
         name = instrument_name,
         notes = {}
     }
-    for _, sound_name in pairs(cat_sounds) do
-        table.insert(instrument.notes, {name = instrument_name.."/"..sound_name, sound = {filename = "__base__/sound/eat-1.ogg"}})
+    for sound_name, sound_path in pairs(cat_sounds) do
+        table.insert(instrument.notes, {name = instrument_name.."/"..sound_name, sound = {filename = "__Half-Life-Sound-Pack__/soundpack/"..cat_name.."/"..sound_path}})
     end
     table.insert(instruments, instrument)
 end
