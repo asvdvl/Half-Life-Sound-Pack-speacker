@@ -9,7 +9,9 @@
     "homepage": "https://github.com/asvdvl/Half-Life-Sound-Pack",
     "package":{
         "ignore":[
-            "*.py"
+            "*.py",
+            "__pycache__/**",
+            "*.kra"
         ]
     }
 }

@@ -3,3 +3,4 @@ soundpack
 locale/*/generated*.cfg
 *.zip
 __pycache__
+*~
