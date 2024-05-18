@@ -1,5 +1,7 @@
 # Half-Life-Sound-Pack - soundpack from the first Half-life packaged in factorio mod
 
+[ru desctiption](https://github.com/asvdvl/Half-Life-Sound-Pack/blob/master/README.ru.md)
+
 The following folders have been included in the mod:
 - barney
 - buttons
