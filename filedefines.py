@@ -1,5 +1,6 @@
 fakecategories = [
-    'alarms'
+    'fvox/alarms',
+    'vox/alarms'
 ]
 table = {
     'barney': {
@@ -8,9 +9,28 @@ table = {
         },
     },
     'buttons': {},
-    'fvox': {},
+    'fvox': {
+        'exclude': {
+            '_comma',
+            '_period',
+        },
+        'move': {
+            'beep': 'fvox/alarms',
+            'bell': 'fvox/alarms',
+            'blip': 'fvox/alarms',
+            'boop': 'fvox/alarms',
+            'buzz': 'fvox/alarms',
+            'flatline': 'fvox/alarms',
+            'hiss': 'fvox/alarms',
+        }
+    },
     'gman': {},
-    'hgrunt': {},
+    'hgrunt': {
+        'exclude': {
+            '_comma',
+            '_period',
+        },
+    },
     'items': {},
     'player': {},
     'scientist': {
@@ -26,13 +46,13 @@ table = {
             '_period',
         },
         'move': {
-            'bizwarn': 'alarms',
-            'bloop': 'alarms',
-            'buzwarn': 'alarms',
-            'dadeda': 'alarms',
-            'deeoo': 'alarms',
-            'doop': 'alarms',
-            'woop': 'alarms',
+            'bizwarn': 'vox/alarms',
+            'bloop': 'vox/alarms',
+            'buzwarn': 'vox/alarms',
+            'dadeda': 'vox/alarms',
+            'deeoo': 'vox/alarms',
+            'doop': 'vox/alarms',
+            'woop': 'vox/alarms',
         }
     }
 }

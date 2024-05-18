@@ -111,7 +111,7 @@ with open(os.path.join(script_dir, "soundpack", "files.lua"), "w") as f:
     ])
     f.write("return {\n")
     for folder_name, folder_content in data.items():
-        f.write(tab+folder_name+" = {\n")
+        f.write(f'{tab}["{folder_name}"] ='+"{\n")
 
         for file_name in folder_content:
             f.write(f'{tab*2}["{file_name}"] = "{folder_content[file_name]}",\n')
@@ -130,7 +130,7 @@ with open(os.path.join(script_dir, "locale/en/generated-categories.cfg"), "w") a
         fcat.write(f'{file_base}={mod_base_translate+cat_name}\n')
 
         file_count = 0
-        with open(os.path.join(script_dir, f'locale/en/generated-{cat_name}.cfg'), "w") as fcatsounds:
+        with open(os.path.join(script_dir, f'locale/en/generated-{cat_name.replace('/', '.')}.cfg'), "w") as fcatsounds:
             fcatsounds.write("[programmable-speaker-note]\n")
             
             for file_name in folder_content:

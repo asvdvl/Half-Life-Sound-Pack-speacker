@@ -1,19 +1,32 @@
-# factorio-mod-template - template for my mods
+# Half-Life-Sound-Pack - soundpack from the first Half-life packaged in factorio mod
 
-how to apply:
-1. rename folder with new mod name
-1. open `info.json`
-1. change:
-    - title
-    - name
-    - description
-    - homepage
-1. change `LICENSE`
-1. shtamp current date in `changelog.txt`
-1. commit changes with message `first mod commit after template`
-- make the mod(develop it)
+The following folders have been included in the mod:
+- barney
+- buttons
+- fvox
+- gman
+- hgrunt
+- items
+- player
+- scientist
+- turret
+- UI
+- vox
 
-### before publish
-1. delete all emply(unused) files
-1. edit README files
-1. describe what was done in `changelog.txt` with version and date increment
+The sounds and background of the thumbnail are the property of Valve Corporation and do not belong to me.
+
+## requirements:
+`pip install dotenv pydub tqdm`
+
+archlinux:
+```
+sudo pacman -S python-dotenv python-tqdm
+yay -S python-pydub
+```
+
+## compilation:
+`python3 ./prepare.py`
+
+fill `.env`
+
+`python3 ./prepare.py`
