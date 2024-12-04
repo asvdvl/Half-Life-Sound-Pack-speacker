@@ -9,7 +9,7 @@ for cat_name, cat_sounds in pairs(files_table) do
         notes = {}
     }
     for sound_name, sound_path in pairs(cat_sounds) do
-        table.insert(instrument.notes, {name = instrument_name.."/"..sound_name, sound = {filename = "__Half-Life-Sound-Pack__/soundpack/"..cat_name.."/"..sound_path}})
+        table.insert(instrument.notes, {name = instrument_name.."/"..sound_name, sound = {filename = "__Half-Life-Sound-Pack-speacker__/soundpack/"..cat_name.."/"..sound_path}})
     end
     table.insert(instruments, instrument)
 end
