@@ -3,6 +3,11 @@ fakecategories = [
     'vox/alarms'
 ]
 table = {
+    'ambience': {
+        'exclude': {
+            '_comma'
+        },
+    },
     'barney': {
         'exclude': {
             '_comma'
